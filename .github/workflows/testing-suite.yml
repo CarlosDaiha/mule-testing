@@ -51,6 +51,9 @@ jobs:
         
       - name: Print Account Information
         run: anypoint-cli-v4 account:user:describe --client_id 9dc691da303545a7b0a5e57baefd83e8 --client_secret 141c76830a584EA485cfB90F86F44064 -o json
+
+      - name: CloudHub 2.0 Application List
+        run: anypoint-cli-v4 runtime-mgr:application:list --environment Sandbox --organization 1a777715-c218-478d-804b-f6a27cfbad3c --client_id 9dc691da303545a7b0a5e57baefd83e8 --client_secret 141c76830a584EA485cfB90F86F44064 -o json
         
       - name: Integration Testing (Install BAT CLI)
         if: ${{ false }}
