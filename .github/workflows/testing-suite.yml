@@ -50,10 +50,10 @@ jobs:
         run: npm install -g anypoint-cli-v4
         
       - name: Print Account Information
-        run: anypoint-cli-v4 account:user:describe --client_id 2caaeb6ecf0f4fa3a4199e80bde55578 --client_secret c69A45f6cbD24f8D9D12E96e677dcFb0 -o json
+        run: anypoint-cli-v4 account:user:describe --client_id 9dc691da303545a7b0a5e57baefd83e8 --client_secret 141c76830a584EA485cfB90F86F44064 -o json
 
       - name: CloudHub 2.0 Application List
-        run: anypoint-cli-v4 runtime-mgr:application:list --environment Sandbox --organization 1a777715-c218-478d-804b-f6a27cfbad3c --client_id 2caaeb6ecf0f4fa3a4199e80bde55578 --client_secret c69A45f6cbD24f8D9D12E96e677dcFb0 -o json
+        run: anypoint-cli-v4 runtime-mgr:application:list --environment Sandbox --organization 1a777715-c218-478d-804b-f6a27cfbad3c --client_id 9dc691da303545a7b0a5e57baefd83e8 --client_secret 141c76830a584EA485cfB90F86F44064 -o json
         
       - name: Integration Testing (Install BAT CLI)
         if: ${{ false }}
